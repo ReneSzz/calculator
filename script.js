@@ -48,13 +48,16 @@ for (let i = 0; i < buttonsOP.length; i++) {
 
 
 
- //Clear button function 
-clearButton.addEventListener('click', function(e)
-{
+function  clear () {
 secondOperand =  "";
 currentOperand = "";
 secondOperandText.innerText = `${secondOperand}`;
 currentOperandText.innerText = `${currentOperand}`;
+   
+}
+clearButton.addEventListener('click', function(e)
+{
+clear();
    
 });
 
@@ -78,6 +81,9 @@ equalsButton.addEventListener('click', function (e)
 console.log(operator);
 currentOperand = evaluate(operator, secondOperand, currentOperand);
 console.log(currentOperand);
+secondaryOperand = "";
+currentOperandText.innerText = `${currentOperand}`;
+secondOperandText.innerText = `${secondaryOperand}`;
 });
 
 
