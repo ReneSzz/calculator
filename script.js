@@ -167,7 +167,17 @@ b = parseInt(b);
 }
 function divide (a, b)
 {
-    a = parseInt(a);
+a = parseInt(a);
 b = parseInt(b);
+ if (a === 0 || b === 0)
+ {
+    
+ return   currentOperandText.innerText = "ERROR CANNOT DIVIDE BY 0";
+    
+ }
+    
+ else{
+
    return a / b ;
+ }
 }
