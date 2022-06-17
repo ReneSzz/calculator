@@ -19,6 +19,7 @@ buttons[i].addEventListener('click', function(e)
 {
 currentOperand += buttons[i].textContent;
 currentOperandText.innerText = `${currentOperand}`;
+
 });
 
 };
@@ -29,19 +30,30 @@ for (let i = 0; i < buttonsOP.length; i++) {
     buttonsOP[i].addEventListener('click', function(e)
     {
        
-     if (currentOperand != undefined) 
+    
+        if (secondOperand !== "")
+        {
+            console.log(operator);
+            currentOperand = evaluate(operator, secondOperand, currentOperand);
+            console.log(currentOperand);
+            secondOperand = "";
+            currentOperandText.innerText = `${currentOperand}`;
+            secondOperandText.innerText = `${secondOperand}`;
+            console.log(secondOperand);
+            console.log(currentOperand);
+        } 
+    
+    
+    else if (currentOperand !== "") 
         {
             secondOperand = currentOperand; 
             currentOperand = "";
             secondOperandText.innerText = `${secondOperand}`;
+            operator = buttonsOP[i].innerText; 
         }
-
+ 
     
-
-
-        operator = buttonsOP[i].innerText; 
-    console.log(operator);
-   
+    
     });
     
     };
@@ -64,9 +76,10 @@ clear();
 // deletes current operand. 
 deleteButton.addEventListener('click', function(e)
 {
-
-currentOperand = "";
-currentOperandText.innerText = `${currentOperand}`;
+    console.log(secondOperand);
+    console.log(currentOperand);
+// currentOperand = "";
+// currentOperandText.innerText = `${currentOperand}`;
    
 });
 
@@ -83,7 +96,7 @@ currentOperand = evaluate(operator, secondOperand, currentOperand);
 console.log(currentOperand);
 secondaryOperand = "";
 currentOperandText.innerText = `${currentOperand}`;
-secondOperandText.innerText = `${secondaryOperand}`;
+secondOperandText.innerText = `${secondOperand}`;
 });
 
 
