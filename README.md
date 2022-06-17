@@ -1,5 +1,15 @@
 # calculator
 
+Still needs to be done :
+
+- Add keyboard support. 
+
+- Currently need to make sure only one decimal can be used in the numbers.
+
+
+
+
+
 
 Things that gave me trouble : 
 
@@ -13,6 +23,3 @@ Another thing that gave me issues is doing the operation instantly after there b
 checking the secondOperand. I was trying to use both the current and secondOperand as arguments to check if two operators were being used but for whatever reason that was causing issues, 
 good thing to know the simplier answer was the fix! 
 
-Still needs to be done :
-
-Currently need to make sure only one decimal can be used in the numbers.
