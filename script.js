@@ -33,14 +33,11 @@ for (let i = 0; i < buttonsOP.length; i++) {
     
         if (secondOperand !== "")
         {
-            console.log(operator);
+            
             secondOperand = evaluate(operator, secondOperand, currentOperand);
-            console.log(currentOperand);
             currentOperand = "";
             currentOperandText.innerText = `${currentOperand}`;
             secondOperandText.innerText = `${secondOperand}`;
-            console.log(secondOperand);
-            console.log(currentOperand);
             operator = buttonsOP[i].innerText; 
         } 
     
@@ -77,10 +74,8 @@ clear();
 // deletes current operand. 
 deleteButton.addEventListener('click', function(e)
 {
-    console.log(secondaryOperand);
-
-// currentOperand = "";
-// currentOperandText.innerText = `${currentOperand}`;
+currentOperand = "";
+currentOperandText.innerText = `${currentOperand}`;
    
 });
 
@@ -92,9 +87,7 @@ deleteButton.addEventListener('click', function(e)
 
 equalsButton.addEventListener('click', function (e)
 {
-console.log(operator);
 currentOperand = evaluate(operator, secondOperand, currentOperand);
-console.log(currentOperand);
 secondOperand = "";
 currentOperandText.innerText = `${currentOperand}`;
 secondOperandText.innerText = `${secondOperand}`;
