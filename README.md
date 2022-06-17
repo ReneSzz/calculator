@@ -22,3 +22,5 @@ checking the secondOperand. I was trying to use both the current and secondOpera
 good thing to know the simplier answer was the fix! 
 
 the logic for the only having one decimal per operand gave me a run for my money but the answer ended up being a lot more simpler then it needed to be just added a else if statement. 
+
+in an attempt to turn the strings into numbers I turned them into integers which in turn didnt allow the proper decimal places to show... didnt realize that until the end.....
