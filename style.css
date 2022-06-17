@@ -42,12 +42,14 @@ border: solid 6px;
 }
 
 #screen { 
+flex-direction: column;
 margin-top: 60px;
 background-color: #FEFBF3;
 width: 500px;
 height: 100px;
 border-radius: 4px;
 border: solid 3px;
+text-align: right;
 
 }
 
@@ -131,3 +133,12 @@ font-weight: bold;
     font-size: 24px;
     font-weight: bold;
     }
+
+#currentOperand {
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+#secondOperand { 
+    margin-top: -3px;
+}
