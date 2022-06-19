@@ -1,15 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@200&display=swap');
+
 
 
 body {
 margin:0;
 padding:0;
-/* overflow: hide;
 display: flex;
+flex-direction: column;
 justify-content: center;
-align-items: center; */
+align-items: center;
+overflow: hidden;
 background-color: #F7F6F2;
 font-family: 'Lato', sans-serif;
 
@@ -17,8 +20,26 @@ font-family: 'Lato', sans-serif;
 
 
 
+#header {
+width: 100vh;
+height: 100px;
+font-family: 'Lato', sans-serif;
+font-family: 'Manrope', sans-serif;
+background-color: #F7F6F2;
+text-align: center;
+font-size: 48px;
+margin-top: 32px;
+margin-bottom: -54px;
 
+}
     
+#header:hover { 
+transition-duration: 0.1s;
+color: #3AB0FF;
+
+}
+
+
 #container { 
 height: 100vh;
 display: flex;
@@ -82,10 +103,21 @@ background-color: #FF7878;
 
 }
 
+#clear:hover{ 
+    background-color: #F32424;
+    
+    }
 #delete { 
+
 background-color: #94B3FD;
 
 }
+
+#delete:hover { 
+    
+    background-color: #34B3F1;
+    
+    }
 .button { 
 display: flex;
 justify-content: center;
@@ -103,7 +135,8 @@ font-weight: bold;
 
 .button:hover, .buttonOP:hover, .largeButtons:hover,  .buttonEquals:hover, .buttonDecimal:hover {
     cursor: pointer;
-
+    transition-duration: 0.3s;
+    background-color: #D4ECDD;
 }
 .buttonOP { 
 display: flex;
