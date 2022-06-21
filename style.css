@@ -26,22 +26,22 @@ height: 60px;
 font-family: 'Lato', sans-serif;
 font-family: 'Manrope', sans-serif;
 background-color: #F7F6F2;
+color:black;
 text-align: center;
 font-size: 48px;
 margin-top: 32px;
-margin-bottom: -54px;
 
 }
     
 #header:hover { 
 transition-duration: 0.1s;
-color: #3AB0FF;
+color: #34B3F1;
 
 }
 
 
 #container { 
-height: 100vh;
+height: 90vh;
 display: flex;
 justify-content: center;
 align-items: center;
