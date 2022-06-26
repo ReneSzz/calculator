@@ -4,9 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@200&display=swap');
 
 
-/*  
-
-i love jon more than anything */
 body {
 margin:0;
 padding:0;
@@ -56,7 +53,6 @@ align-items: center;
 #calculator{ 
 display: flex;
 flex-direction: column;
-/* justify-content: space-between; */
 align-items: center;
 background-color: #C8C6C6;
 width: 600px;
